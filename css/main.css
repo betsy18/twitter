@@ -14,17 +14,21 @@ header{
     height: 100px;
 }
 
-header h1{
+header div h1{
     position: relative;
     text-align: center;
     top: 35px;
 }
 
+header h4{
+    margin-top: 85px;
+}
 section div{
     padding-top: 30px;
     width: 40%;
     height: 150px;
     margin: 40px;
+    border: 1px solid grey;
 }
 
 form{
@@ -33,7 +37,7 @@ form{
     float: right;
     width: 50%;
     margin-bottom: 60px;
-    bottom: 190px;
+    bottom: 220px;
     margin-right: 40px;
 }
 
@@ -42,7 +46,9 @@ textarea{
     width: 100%;
 }
 
-div{
-    outline: 1px solid purple;
-
+form button{
+    padding: 15px;
+    color: #fff;
+    background: cornflowerblue;
+    border-radius: 25px;
 }
