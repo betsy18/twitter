@@ -3,9 +3,11 @@
 Realización del ejercicio práctico Twitter.
 
 * vista del archivo original
+
+
 ![Twitter](assets/images/twitter.gif)
 
-### ELementos a utilizar:
+### ELementos utilizdos:
  
 #### Css
  
@@ -18,6 +20,7 @@ Realización del ejercicio práctico Twitter.
 #### Js
 
  * Lenguaje para dar interaccion y crear un pag.dinámica para el usuario
+ * Uso del archivo moment para la fecha y hora
 
 #### Index.html
 
