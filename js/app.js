@@ -8,7 +8,7 @@ window.addEventListener('load', function(event) {
     character.textContent = textArea.value.length + 1;
     if (character.textContent > 139) {
       save.disabled = true;
-      character.textContent = maxlength - textArea.value.length;
+      character.textContent = 140 - textArea.value.length;
       character.classList.add('red');
     } else if (character.textContent >= 120 && character.textContent < 130) {
       character.classList.add('green');
@@ -28,6 +28,8 @@ window.addEventListener('load', function(event) {
         container.appendChild(date);
         container.classList.add('form');
         textArea.value = '';
+      } else {
+        save.disabled = true;
       }
     });
   });
