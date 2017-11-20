@@ -88,14 +88,21 @@ form p{
 }
 
 .blue{
-    background-color: cornflowerblue;
+    color: cornflowerblue;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
 }
 
 .form{
     border-radius: 10px;
     background-color: white;
-    width: 30%;
-    height: 100px;
+    width: 50%;
     padding: 10px;
     margin: 0px auto;
 }
