@@ -4,15 +4,12 @@ window.addEventListener('load', function(event) {
   var character = document.getElementById('character');
   var container = document.getElementById('container');
 
-  textArea.addEventListener('keypress', function() {
+  textArea.addEventListener('keypress', function(event) {
     character.textContent = textArea.value.length + 1;
-    console.log(character);
     if (character.textContent > 139) {
       save.disabled = true;
-      character.textContent = 140 - textArea.value.length;
+      character.textContent = maxlength - textArea.value.length;
       character.classList.add('red');
-      character.classList.remove('blue');
-      character.classList.remove('green');
     } else if (character.textContent >= 120 && character.textContent < 130) {
       character.classList.add('green');
     } else if (character.textContent >= 130 && character.textContent < 140) {
@@ -24,10 +21,12 @@ window.addEventListener('load', function(event) {
     // para verificar que tenga contenido 
       if (textArea.value) {
         var text = document.createElement('p');
+        var date = document.createElement('p');
+        date.textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
         text.textContent = textArea.value;
         container.appendChild(text);
+        container.appendChild(date);
         container.classList.add('form');
-        console.log(text);
         textArea.value = '';
       }
     });
